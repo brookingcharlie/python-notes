@@ -16,3 +16,4 @@ Notes on language features:
 * [truthiness](truthiness.py)
 * [generators](generators.py)
 * [randomness](randomness.py)
+* [regular expressions](regular-expressions.py)
