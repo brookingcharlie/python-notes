@@ -36,3 +36,10 @@ assert offspring['foo'] == [], 'calls list() to default to an empty list'
 
 discount = defaultdict(lambda: 0.50)
 assert discount['oranges'] == 0.5, 'calls given default_factory function'
+
+from collections import Counter
+
+c = Counter([0, 1, 2, 0, 2, 3, 4, 2])
+assert c[2] == 3
+assert c[5] == 0
+assert c.most_common(3) == [(2, 3), (0, 2), (1, 1)], 'n most common elements and their counts'
