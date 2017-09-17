@@ -15,3 +15,4 @@ Notes on language features:
 * [control flow](control-flow.py)
 * [truthiness](truthiness.py)
 * [generators](generators.py)
+* [randomness](randomness.py)
