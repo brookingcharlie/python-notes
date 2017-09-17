@@ -18,3 +18,4 @@ Notes on language features:
 * [randomness](randomness.py)
 * [regular expressions](regex.py)
 * [classes](classes.py)
+* [functional](functional.py)
