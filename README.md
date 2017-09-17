@@ -13,3 +13,4 @@ Notes on language features:
 * [dictionaries](dictionaries.py)
 * [sets](sets.py)
 * [control flow](control-flow.py)
+* [truthiness](truthiness.py)
