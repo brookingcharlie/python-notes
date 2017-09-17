@@ -3,13 +3,17 @@ def sq(n):
 
 sq_v2 = lambda n: n * n
 
-def apply(f, n):
-  return f(n)
-
 assert sq(2) == 4, 'calling def-defined function'
 assert sq_v2(2) == 4, 'calling lambda-defined function'
+
+# higher-order functions
+
+def apply(f, n): return f(n)
+
 assert apply(sq, 2), 'passing a function argument by identifier'
 assert apply(lambda n: n * n, 2), 'passing a function argument as a lambda'
+
+# default args
 
 def pow(n=2, m=3): return n ** m
 
