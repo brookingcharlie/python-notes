@@ -29,3 +29,8 @@ except StopIteration:
 r2 = lazy_range(3)
 assert list(r2) == [0, 1, 2], 'construct list with fresh generator'
 assert list(r2) == [], 'trying again yeilds no elements (does not raise exception)'
+
+# comprehensions
+
+lazy_evens = (i for i in lazy_range(10) if i % 2 == 0)
+assert [lazy_evens.next(), lazy_evens.next()] == [0, 2]
