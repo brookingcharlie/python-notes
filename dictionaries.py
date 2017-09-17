@@ -24,6 +24,8 @@ assert 'Joel' in grades
 assert 'Kate' not in grades
 assert ('Elle' in grades) == ('Elle' in grades.keys()), 'in expr checks key membership'
 
+# defaultdict
+
 from collections import defaultdict
 
 word_counts = defaultdict(int)
@@ -36,6 +38,8 @@ assert offspring['foo'] == [], 'calls list() to default to an empty list'
 
 discount = defaultdict(lambda: 0.50)
 assert discount['oranges'] == 0.5, 'calls given default_factory function'
+
+# counters
 
 from collections import Counter
 
