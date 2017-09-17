@@ -23,3 +23,16 @@ assert sorted(grades.values()) == sorted([80, 95, 75])
 assert 'Joel' in grades
 assert 'Kate' not in grades
 assert ('Elle' in grades) == ('Elle' in grades.keys()), 'in expr checks key membership'
+
+from collections import defaultdict
+
+word_counts = defaultdict(int)
+word_counts['the'] = 1024
+assert word_counts['the'] == 1024
+assert word_counts['foo'] == 0, 'calls int() to create default value 0'
+
+offspring = defaultdict(list)
+assert offspring['foo'] == [], 'calls list() to default to an empty list'
+
+discount = defaultdict(lambda: 0.50)
+assert discount['oranges'] == 0.5, 'calls given default_factory function'
