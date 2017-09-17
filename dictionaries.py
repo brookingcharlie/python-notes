@@ -47,3 +47,8 @@ c = Counter([0, 1, 2, 0, 2, 3, 4, 2])
 assert c[2] == 3
 assert c[5] == 0
 assert c.most_common(3) == [(2, 3), (0, 2), (1, 1)], 'n most common elements and their counts'
+
+# comprehensions
+
+squares = {x: x * x for x in range(5)}
+assert squares[3] == 9
