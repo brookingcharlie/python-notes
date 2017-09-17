@@ -9,3 +9,4 @@ Notes on language features:
 * [strings](strings.py)
 * [lists](lists.py)
 * [exceptions](exceptions.py)
+* [tuples](tuples.py)

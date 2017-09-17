@@ -10,7 +10,7 @@ assert [1, 2, ] == [1, 2], 'list syntax allows a comma at the end'
 r = [0, 1, 2, 3, 4]
 
 assert r[0] == 0, 'index 0 fetches first element'
-assert r[4] == 4, 'index n fetches nth element'
+assert r[4] == 4, 'index n fetches nth zero-based element'
 assert r[-1] == 4, 'index -1 fetches last element'
 assert r[-2] == 3, 'index -n fetches nth-last element'
 
