@@ -45,6 +45,19 @@ assert ys == [4, 2, 1, 3], 'sorted does not modify list'
 assert ys.sort() == None
 assert ys == [1, 2, 3, 4], 'sort does modify list'
 
+# enumerating
+
+cs = ['a', 'b', 'c']
+enumeration = [(i, c) for i, c in enumerate(cs)]
+assert enumeration[0] == (0, 'a')
+assert enumeration[2] == (2, 'c')
+
+# zipping
+
+zipped = zip([1, 2, 3], ['a', 'b', 'c'])
+assert zipped[0] == (1, 'a')
+assert zipped[2] == (3, 'c')
+
 # comprehensions
 
 even_squares = [x * x for x in range(5) if x % 2 == 0]
