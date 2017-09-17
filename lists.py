@@ -32,3 +32,9 @@ assert xs.extend([4, 5, 6]) == None, 'extend appends all elements from given lis
 assert xs == [1, 2, 3, 4, 5, 6], 'extends modifies the list'
 assert xs.append(7) == None, 'append single element'
 assert xs == [1, 2, 3, 4, 5, 6, 7], 'append modifies the list'
+
+ys = [4, 2, 1, 3]
+assert sorted(ys) == [1, 2, 3, 4]
+assert ys == [4, 2, 1, 3], 'sorted does not modify list'
+assert ys.sort() == None
+assert ys == [1, 2, 3, 4], 'sort does modify list'
