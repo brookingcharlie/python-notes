@@ -38,3 +38,13 @@ assert sorted(ys) == [1, 2, 3, 4]
 assert ys == [4, 2, 1, 3], 'sorted does not modify list'
 assert ys.sort() == None
 assert ys == [1, 2, 3, 4], 'sort does modify list'
+
+# comprehensions
+
+even_squares = [x * x for x in range(5) if x % 2 == 0]
+coords = [(x, y) for x in range(2) for y in range(3)]
+zeroes = [0 for _ in range(5)] # use _ as conventional name
+assert even_squares == [0, 4, 16]
+assert coords[0] == (0, 0)
+assert coords[-1] == (1, 2)
+assert len(zeroes) == 5
