@@ -1,11 +1,13 @@
 ns = [1, 2, 3]
-vs = ['foo', 0.1, True]
-ls = [ns, vs, []]
+vs = ['foo', True, ns]
 
 assert ns == [1, 2, 3], '== compares list elements'
 assert sum(ns) == 6, 'python has a built-in sum method'
-assert len(ls) == 3, 'python has a built-in length method'
+assert len(vs) == 3, 'python has a built-in length method'
 assert [1, 2, ] == [1, 2], 'list syntax allows a comma at the end'
+
+a, b = [1, 2]
+assert (a, b) == (1, 2), 'assignment can deconstruct lists'
 
 r = [0, 1, 2, 3, 4]
 
@@ -30,6 +32,3 @@ assert xs.extend([4, 5, 6]) == None, 'extend appends all elements from given lis
 assert xs == [1, 2, 3, 4, 5, 6], 'extends modifies the list'
 assert xs.append(7) == None, 'append single element'
 assert xs == [1, 2, 3, 4, 5, 6, 7], 'append modifies the list'
-
-a, b = [1, 2]
-assert (a, b) == (1, 2), 'assignment can deconstruct lists'
