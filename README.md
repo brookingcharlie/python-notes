@@ -14,3 +14,4 @@ Notes on language features:
 * [sets](sets.py)
 * [control flow](control-flow.py)
 * [truthiness](truthiness.py)
+* [generators](generators.py)
