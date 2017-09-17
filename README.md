@@ -10,3 +10,4 @@ Notes on language features:
 * [lists](lists.py)
 * [exceptions](exceptions.py)
 * [tuples](tuples.py)
+* [dictionaries](dict.py)
